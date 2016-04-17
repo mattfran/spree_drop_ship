@@ -1,7 +1,5 @@
 Spree::Admin::ProductsController.class_eval do
 
-  belongs_to :supplier
-
   before_filter :get_suppliers, only: [:edit, :update]
   before_filter :supplier_collection, only: [:index]
 
